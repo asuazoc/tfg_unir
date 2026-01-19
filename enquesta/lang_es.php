@@ -1,0 +1,44 @@
+<?php
+define("TXT_ENQUESTA_TITOL","Encuesta de satisfacción");
+define("TXT_ENQUESTA_EXPLICACIO","Le agradeceremos que nos haga llegar su opinión de la jornada. Todos los datos serán tratados de forma confidencial y nos ayudarán a mejorar aquellos aspectos que considere de cara a próximas ediciones.");
+define("TXT_ENQUESTA_VALORACIO","Valore de 1 a 5 los siguientes aspectos, donde 1 significa insatisfacción total i 5, satisfacción total");
+define("TXT_ENQUESTA_TITOL_CONTINGUT","Contenido");
+define("TXT_ENQUESTA_OPCIO_CONTINGUT","Los contenidos han cubierto mis expectativas");
+define("TXT_ENQUESTA_OPCIO_TEMES","Los temas se han tratado con la profundidad que esperaba");
+define("TXT_ENQUESTA_TITOL_METODOLOGIA","Metodología y organización");
+define("TXT_ENQUESTA_OPCIO_DURACIO","La duración del congreso se ha ajustado al programa");
+define("TXT_ENQUESTA_OPCIO_METODOLOGIA","La metodología se ha adecuado a los contenidos");
+define("TXT_ENQUESTA_OPCIO_CONDICIONS","Las condiciones ambientales (auditorio, recursos utilizados, etc.) han sido apropiados para facilitar el congreso");
+define("TXT_ENQUESTA_TITOL_TAULES_RODONES","Mesas redondas");
+define("TXT_ENQUESTA_OPCIO_PONENETS","Los ponentes dominaban la materia");
+define("TXT_ENQUESTA_OPCIO_CLARETAT","Los contenidos se han expuesto con la debida claridad");
+define("TXT_ENQUESTA_OPCIO_MOTIVICIO","Motivan y despiertan interés en los asistentes");
+define("TXT_ENQUESTA_OPCIO_HORARI","Han cumplido el horario establecido");
+define("TXT_ENQUESTA_TITOL_VALORACIO","Valoración y sugerencias");
+define("TXT_ENQUESTA_OPCIO_UTIL","El congreso ha sido útil para mí");
+define("TXT_ENQUESTA_OPCIO_ORGANITZACIO","En general, la organización ha sido apropiada");
+define("TXT_ENQUESTA_APORTACIONS","Indique aspectos para mejorar la calidad de la jornada. Puede hacer aportaciones y sugerencias");
+define("TXT_ENQUESTA_MAX","(200 máx.)");
+define("TXT_ENQUESTA_ENVIAR","Enviar");
+define("TXT_ENQUESTA_SALTAR","Saltar"); 
+
+define("TXT_ENQUESTA_TALLERS_TITOL","Enquesta d'opinió dels tallers");
+define("TXT_ENQUESTA_TALLERS_EXPLICACIO","Us agrairem que ens feu saber la vostra opinió del taller. Totes les dades seran tractades de forma confidencial i ens ajudaran a millorar aquells aspectes que considereu de cara a properes edicions.");
+define("TXT_ENQUESTA_TALLERS_VALORACIO","Valori de 1 a 5 els següents aspectes, on 1 significa Insatisfacció total i 5 satisfacció total");
+define("TXT_ENQUESTA_TALLERS_TITOL_CONTINGUT","Contingut");
+define("TXT_ENQUESTA_TALLERS_OPCIO_CONTINGUT","Els continguts han cobert les seves expectatives");
+define("TXT_ENQUESTA_TALLERS_OPCIO_TEMES","Els temes s'han tractat amb la profunditat que esperava");
+define("TXT_ENQUESTA_TALLERS_TITOL_METODOLOGIA","Metodologia i Organització");
+define("TXT_ENQUESTA_TALLERS_OPCIO_DURACIO","La duració del taller ha estat adequada al programa");
+define("TXT_ENQUESTA_TALLERS_OPCIO_METODOLOGIA","La metodologia s'ha adequat als continguts");
+define("TXT_ENQUESTA_TALLERS_OPCIO_CONDICIONS","Les condicions ambientals (auditori, recursos utilitzats) han estat adequades per facilitar el taller");
+define("TXT_ENQUESTA_TALLERS_TITOL_TAULES_RODONES","Taules rodones");
+define("TXT_ENQUESTA_TALLERS_OPCIO_PONENETS","Els ponents dominaven la matèria");
+define("TXT_ENQUESTA_TALLERS_OPCIO_CLARETAT","Els continguts s'han exposat amb la deguda claredat");
+define("TXT_ENQUESTA_TALLERS_OPCIO_MOTIVICIO","Motiven i desperten interès als assistents");
+define("TXT_ENQUESTA_TALLERS_OPCIO_HORARI","Han complert l’horari establert");
+define("TXT_ENQUESTA_TALLERS_TITOL_VALORACIO","Valoració i suggerències");
+define("TXT_ENQUESTA_TALLERS_OPCIO_UTIL","El taller ha estat útil per a mi");
+define("TXT_ENQUESTA_TALLERS_OPCIO_ORGANITZACIO","En general, l'organització ha estat apropiada");
+define("TXT_ENQUESTA_TALLERS_APORTACIONS","Indiqui aspectes per a millorar la qualitat del taller, així com aportacions i suggerències.");
+?>

@@ -1,0 +1,195 @@
+/* CAPES */
+#titolpagina {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 36px;
+	color: #737357;
+	font-weight: normal;
+	border-bottom: 1px dashed #737357;
+	padding-bottom: 10px;
+	width: 100%;
+	background-color: #E3E3C7;
+	background-image: url(grafics/banner.jpg);
+	background-repeat: no-repeat;
+}
+#subtitolpagina {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 24px;
+	color: #737357;
+	font-weight: normal;
+	padding-bottom: 10px;
+	width: 100%;
+}
+#infopagina {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8px;
+	font-weight: bold;
+	color: #737357;
+	padding-bottom: 2px;
+	padding-top: 2px;
+	width: 100%;
+	background-color: #E3E3C7;	
+}
+#peupagina {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+	border-top: 1px dashed #737357;
+	margin-top: 10px;
+	padding-top: 10px;
+	width: 100%;	
+}
+
+#contingut {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	width: 100%;	
+}
+
+#menu {
+	padding: 5px 5px 5px 5px;	
+	background-color: #E3E3C7;
+	width: 100%;	
+}
+
+#menu a,
+#menu a:link,
+#menu a:visited {
+	color: #000000;
+	background-color: #C7C78F;	
+	text-decoration: none;
+	padding: 2px 2px 2px 2px;	
+	border: 1px solid #000000;	
+}
+
+#menu a:hover {
+	color: #C7C78F;
+	background-color: #FFFFFF;
+	text-decoration: none;
+	padding: 2px 2px 2px 2px;		
+	border: 1px solid #000000;
+}
+
+/* CLASSES DE LINKS */
+a {
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #003399;
+}
+a:link {
+	text-decoration: none;
+}
+a:hover {
+	color: #CC0000;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+
+/* CLASSES DE TAULES*/
+.taula1 {
+	background-color: #F1F1E3;
+	border: 1px solid #000000;
+	width: 850px;
+}
+.taula2 {
+	background-color: #E3E3C7;
+	border: 1px solid #FFFFFF;
+	color: #CC0000;
+	text-decoration: none;
+	padding: 2px;
+}
+.taula3 {
+	background-color: #F1F1E3;
+	border: 1px solid #FFFFFF;
+}
+
+/* CLASSES PARTICULARS */
+.normal {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+}
+
+.error {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #8B0000;
+	font-weight: bolder;
+}
+
+/* MODIFICADORS DE TAGS */
+select {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #000000;
+}
+input {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+textarea {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+form {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	border: 10px solid #E3E3C7;
+	margin: 5px 5px 5px 5px;
+	padding: 0px 0px 0px 0px;
+	font-size: 10pt;
+	background-color: #FFFFFF;
+	text-align: center;	
+}
+/***Estils del selector de llista***/
+
+  ul.sortablelist {
+    list-style-image:none;
+    list-style-type:none;
+    margin-top:0px;
+    margin:0px;
+    padding:0px;
+	 
+  }
+
+  ul.sortabledemo li {
+    padding:2px;
+    margin:2px;
+	 font-family:Verdana, Arial, Helvetica, sans-serif;
+	 font-size:10px;
+	 font-weight: bold;
+	 list-style-image:none;
+    list-style-type:none;
+   color:White;
+  }
+
+  span.handle {
+    color:white;
+    cursor: move;
+	 font-family:Verdana, Arial, Helvetica, sans-serif;
+	 font-size:12px;
+	 font-weight: bold;
+	
+  }
+
+  li.green {
+  background-color: #BFBF91;
+    border:1px solid #CCCCC0;
+    cursor: move;
+	 
+  }
+
+  li.orange {
+	 background-color: #BFBF91;
+    border:1px solid #CCCCC0;
+    cursor: move;
+  }

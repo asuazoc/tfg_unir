@@ -1,0 +1,136 @@
+<img style="width:100%" src="https://tfgunir.HOSTNAME.com/backend_gestio/templates/cabecera_es.jpg"/>
+<h2><%$titol_congres%></h2>
+<h3><%$dates_del_congres%></h3>
+
+<%$dades.nom%> <%$dades.cg1%> <%$dades.cg2%>
+<br>
+
+
+<b>Muchas gracias por enviar su solicitud de inscripci&oacute;n</b>
+<p>
+Este documento &uacute;nicamente detalla los datos de la inscripci&oacute;n que hemos recibido.
+Una vez validado el pago, recibir&aacute; el documento de confirmaci&oacute;n.
+</p>
+<hr/>
+<b>
+<p>
+<%$txt_info_usuari_password%>
+</p>
+</b>
+<hr/>
+</br>
+
+</b>
+<h3>INSCRIPCI&Oacute;N</h3>
+<table width="80%"  border="0" cellspacing="0" cellpadding="0">
+	  <tr>
+            <td  width="45%"><div align="left"><b>Referencia</b></div></td>
+            <td  width="55%"><%$dades.id%></td>
+          </tr>
+          <tr>
+            <td><div align="left"><b>Nombre</b></div></td>
+            <td><%$dades.nom%></td>
+          </tr>
+	  <tr>
+            <td  width="45%"><div align="left"><b>Apellidos</b></div></td>
+            <td  width="55%"><%$dades.cg1%> <%$dades.cg2%></td>
+          </tr>
+          <tr>
+            <td><div align="left"><b>NIF</b></div></td>
+            <td><%$dades.nif%></td>
+          </tr>
+          <tr>
+            <td><div align="left"><b>E-mail</b></div></td>
+            <td><%$dades.email2%></td>
+          </tr>
+          <tr>
+            <td><div align="left"><b>Localidad</b></div></td>
+            <td><%$dades.localitat%></td>
+          </tr>
+          <tr>
+            <td><div align="left"><b>Lugar de trabajo</b></div></td>
+            <td><%$dades.lloctreball%></td>
+          </tr>
+          <tr>
+            <td><div align="left"><b>E-mail(Contacto)</b></div></td>
+            <td><%$dades.email%></td>
+          </tr>
+          <tr>
+            <td><div align="left"><b>Tel&eacute;fono contacto</b></div></td>
+            <td><%$dades.telparticular%></td>
+          </tr>
+          <tr>
+            <td><div align="left"><b>PRECIO INSCRIPCI&Oacute;N</b><br/>
+            <%$tipus_inscripcio%></div></td>
+            <td><b><%$dades.total_inscripcio%> &euro; </b></td>
+          </tr>
+          <tr>
+            <td width="45%"><div align="left"><b>Hotel</b></div></td>
+            <td width="55%"><%$hotel%></td>
+          </tr>
+          <tr>
+            <td><div align="left"><b>Fecha de entrada</b></div></td>
+            <td><%$dataentrada%></td>
+          </tr>
+          <tr>
+            <td><div align="left"><b>Fecha de salida</b></div></td>
+            <td><%$datasortida%></td>
+          </tr>
+          <tr>
+            <td><div align="left"><b>Tipo Habitaci&oacute;n</b></div></td>
+            <td><%$habitacio%></td>
+          </tr>
+          <tr>
+            <td><div align="left"><br/><b>PRECIO HOTEL</b></div></td>
+            <td><b><%$dades.total_allotjament%> &euro; </b></td>
+          </tr>
+	  	  <tr>
+            <td><div align="left"><br/><b>TOTAL A PAGAR</b></div></td>
+            <td><b><%$dades.total%> &euro; </b></td>
+          </tr>
+</table>
+<br>
+<h3>Datos de facturaci&oacute;n</h3>
+<table width="80%"  border="0" cellspacing="0" cellpadding="0">
+	<tr>
+            <td width="45%"><div align="left"><b>Nombre/Raz&oacute;n Social</b></div></td>
+            <td width="55%"><%$dades.nom_facturacio%> </td>
+          </tr>
+
+	  <tr>
+            <td><div align="left"><b>NIF/CIF</b></div></td>
+            <td><%$dades.nif_facturacio%> </td>
+          </tr>
+
+	  <tr>
+            <td><div align="left"><b>Direcci&oacute;n</b></div></td>
+            <td><%$dades.adresa_facturacio%> </td>
+          </tr>
+
+  	  <tr>
+            <td><div align="left"><b>CP</b></div></td>
+            <td><%$dades.cp_facturacio%> </td>
+          </tr>
+
+	  <tr>
+            <td><div align="left"><b>Poblaci&oacute;n</b></div></td>
+            <td><%$dades.localitat_facturacio%> </td>
+          </tr>
+</table>
+
+<span style="font-size:85%">
+<%$forma_pagament%>
+</span>
+
+<span style="font-size:85%">
+<%$politica_cancelacions%>
+</span>
+
+<span style="font-size:85%">
+<%$excepcions%>
+</span>
+
+<!--<span style="font-size:70%">
+<h3><%$TXT_PROTECCIO_DADES_TITOL%></h3>
+<P><%$TXT_PROTECCIO_DADES%></p>
+</span>-->

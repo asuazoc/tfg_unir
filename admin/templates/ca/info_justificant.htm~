@@ -1,0 +1,184 @@
+<h2><%$titol_congres%></h2>
+<h3><%$dates_del_congres%></h3>
+<p>
+<h2><%$dades.id_tractament%> <%$dades.nom%> <%$dades.cognoms%> </h2></p>
+<p><h3>CONFIRMACI&Oacute;N DE INSCRIPCI&Oacute;N</h3></p>
+<p>Este documento confirma su inscripci&oacute;n a la <%$titol_congres%> <%$dates_del_congres%>.
+</p>
+<h3><font color="#746b6b">INSCRIPCI&Oacute;N</font></h3>
+
+<table  width="80%"  border="0" cellspacing="0" cellpadding="0">
+	  <tr>
+            <td><div align="left"><strong>Referencia</strong></div></td>
+            <td><%$dades.id%></td>
+          </tr>
+	  <tr>
+            <td  width="45%"><div align="left"><strong>Numero de factura</strong></div></td>
+            <td  width="55%"><%$dades.numero_factura%></td>
+          </tr>
+          <tr>
+            <td  width="45%"><div align="left"><strong>Empresa</strong></div></td>
+            <td  width="55%"><%$dades.nom_facturacio%> </td>
+          </tr>           
+          <tr>
+            <td><div align="left"><strong>Nombre</strong></div></td>
+            <td><%$dades.nom%></td>
+          </tr>
+	  <tr>
+            <td><div align="left"><strong>Apellidos</strong></div></td>
+            <td><%$dades.cognoms%></td>
+          </tr>
+          <tr>
+            <td><div align="left"><strong>Localidad</strong></div></td>
+            <td><%$dades.localitat%></td>
+          </tr>
+          <tr>
+            <td><div align="left"><strong>Lugar de Trabajo</strong></div></td>
+            <td><%$dades.lloctreball%></td>
+          </tr>
+          <tr>
+            <td><div align="left"><strong>Email</strong></div></td>
+            <td><%$dades.email%></td>
+          </tr>
+          <tr>
+            <td><div align="left"><strong>Tel&eacute;fono contacto</strong></div></td>
+            <td><%$dades.telparticular%></td>
+          </tr>
+          <tr>
+            <td><div align="left"><strong>PRECIO INSCRIPCI&Oacute;N</strong></div></td>
+            <td><b><%$dades.total_inscripcio%> &euro; </b></td>
+          </tr>
+
+          <tr>
+            <td><div align="left"><strong>Hotel</strong></div></td>
+            <td><?=$a_hotel[$row[id_hotel]];?></td>
+          </tr>
+          <tr>
+            <td><div align="left"><strong>D&iacute;a Entrada</strong></div></td>
+            <td><?=canvia_normal($row['dataentrada']);?></td>
+          </tr>
+          <tr>
+            <td><div align="left"><strong>D&iacute;a Salida</strong></div></td>
+            <td><?=canvia_normal($row['datasortida']);?></td>
+          </tr>
+          <tr>
+            <td><div align="left"><strong>Tipo Habitaci&oacute;n</strong></div></td>
+            <td><?=$a_habitacio[$row[id_habitacio]];?></td>
+          </tr>
+          <tr>
+            <td><div align="left"><strong>PRECIO HOTEL</strong></div></td>
+            <td><b><%$dades.total_allotjament%> &euro; </b></td>
+          </tr>
+</table>
+<br><br>
+
+		<p><h3><strong>PRECIO TOTAL: <?=($row['total']) ?> &euro; </strong></h3></p>
+
+
+
+
+<h2><%$titol_congres%></h2>
+<h3><%$dates_del_congres%></h3>
+
+<%$dades.tractament%> <%$dades.nom%> <%$dades.cognoms%>
+<br>
+
+<b>Muchas gracias por enviar su solicitud de inscripci&oacute;</b>
+<p>Este documento &uacute;nicamente detalla los datos de la inscripci&oacute;n que hemos recibido.<br/>
+Una vez validado el pago, recibir&aacute; el documento de confirmaci&oacute;n</p>
+</b>
+<h3>INSCRIPCI&Oacute;N</h3>
+
+<table width="80%"  border="0" cellspacing="0" cellpadding="0">
+	  <tr>
+            <td  width="45%"><div align="left"><b>Referencia</b></div></td>
+            <td  width="55%"><%$dades.id%></td>
+          </tr>
+          <tr>
+            <td><div align="left"><b>Nombre</b></div></td>
+            <td><%$dades.nom%></td>
+          </tr>
+	  <tr>
+            <td  width="45%"><div align="left"><b>Apellidos</b></div></td>
+            <td  width="55%"><%$dades.cognoms%></td>
+          </tr>
+          <tr>
+            <td><div align="left"><b>Localidad</b></div></td>
+            <td><%$dades.localitat%></td>
+          </tr>
+          <tr>
+            <td><div align="left"><b>Lugar de Trabajo</b></div></td>
+            <td><%$dades.lloctreball%></td>
+          </tr>
+          <tr>
+            <td><div align="left"><b>E-mail</b></div></td>
+            <td><%$dades.email%></td>
+          </tr>
+          <tr>
+            <td><div align="left"><b>Tel&eacute;fono contacto</b></div></td>
+            <td><%$dades.telparticular%></td>
+          </tr>
+	  <tr>
+            <td><div align="left"><br/><b>PRECIO INSCRIPCI&Oacute;N</b></div></td>
+            <td><b><%$dades.total_inscripcio%> &euro; </b></td>
+          </tr>
+          <tr>
+            <td width="45%"><div align="left"><b>Hotel</b></div></td>
+            <td width="55%"><?=$a_hotel[$row[hotel]];?></td>
+          </tr>
+          <tr>
+            <td><div align="left"><b>D&iacute;a de Entrada</b></div></td>
+            <td><?=canvia_normal($row['dataentrada']);?></td>
+          </tr>
+          <tr>
+            <td><div align="left"><b>D&iacute;a de Salida</b></div></td>
+            <td><?=canvia_normal($row['datasortida']);?></td>
+          </tr>
+          <tr>
+            <td><div align="left"><b>Tipo Habitaci&oacute;n</b></div></td>
+            <td><?=$a_habitacio[$row[habitacio]];?></td>
+          </tr>
+          <tr>
+            <td><div align="left"><br/><b>PRECIO HOTEL</b></div></td>
+            <td><b><%$dades.total_allotjament%> &euro; </b></td>
+          </tr>
+	  <tr>
+            <td><div align="left"><br/><b>PRECIO TOTAL A PAGAR</b></div></td>
+            <td><b><%$dades.total%> &euro; </b></td>
+          </tr>
+</table>
+<br>
+<h3>Datos de facturaci&oacute;n</h3>
+<table width="80%"  border="0" cellspacing="0" cellpadding="0">
+	<tr>
+            <td width="45%"><div align="left"><b>Nombre/Raz&oacute;n Social</b></div></td>
+            <td width="55%"><%$dades.nom_facturacio%> </td>
+          </tr>
+
+	  <tr>
+            <td><div align="left"><b>NIF/CIF</b></div></td>
+            <td><%$dades.nif_facturacio%> </td>
+          </tr>
+
+	  <tr>
+            <td><div align="left"><b>Direcci&oacute;</b></div></td>
+            <td><%$dades.adresa_facturacio%> </td>
+          </tr>
+
+  	  <tr>
+            <td><div align="left"><b>CP</b></div></td>
+            <td><%$dades.cp_facturacio%> </td>
+          </tr>
+
+	  <tr>
+            <td><div align="left"><b>Poblaci&oacute;n</b></div></td>
+            <td><%$dades.localitat_facturacio%> </td>
+          </tr>
+</table>
+<h3>Forma de pago</h3>
+	<p >Para confirmar la inscripci&oacute; y/o reserva de alojamiento ser&aacute; necesario realizar el correspondiente pago.<br/>
+	<br/>Transferencia bancaria a nombre de ACTO GESTIO i ASSESORAMENT DE CONGRESSOS, haciendo constar la referencia 
+	"Reuni&oacute;n SEDAR", a CAIXA de CATALUNYA. c/c n&uacute;mero: <b><%ccc%></b>. Se ha de hacer llegat la hoja de inscripci&oacute; 
+	o resguardo de transferencia (haciendo constar la referencia "Reuni&oacute; Sedar") al numero de 
+	fax: 93 755 23 83 o bien al correo electr&oacute;nico <%=$correu_congres%>
+<br/>

@@ -1,0 +1,3 @@
+<%include("header_mail_justificant.htm")%>
+<%include("info_justificant_ca.htm")%>
+<%include("footer_mail_justificant.htm")%>

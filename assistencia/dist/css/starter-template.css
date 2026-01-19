@@ -1,0 +1,320 @@
+/*
+Tema lila:
+	clar #f7e6ff
+	fosc #7700b3
+Tema gris:
+	clar #dadad8
+	fosc black
+Tema blau:
+	clar #e6f3ff
+	fosc #005cb3
+Tema Seminari Cardiologia
+	clar #e9d0c7
+	fosc #98221F
+Tema corporatiu
+	clar #e6f3ff
+	fosc #005cb3
+*/
+
+body {
+		padding: 10px;
+}
+
+a {
+	color: #005cb3;
+}
+
+.container,.div_imatge-header{
+	width:100%;
+	padding: 0px 5% 0px 5%;
+}
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.navbar a{
+	color: #005cb3;
+}
+
+.navbar a .active{
+	color: #005cb3;
+}
+
+a.navbar-brand {
+	font-weight: bold;
+}
+
+.navbar, .navbar-top {
+	background-color: #F8F8F8;
+}
+
+.icon-bar {
+	background-color: #005cb3;
+}
+
+img.imatge-header {
+	align:center;
+	width:100%;
+	max-width:702px;
+	padding: 5px 10px 0px 10px;
+}
+
+div.panel-heading {
+	background-color: #e6f3ff;
+	color: #005cb3;
+
+}
+div.panel {
+	border-color: #005cb3;
+	/*background-color: #F8F8F8;*/
+}
+
+li.active a {
+	color: #e6f3ff;
+	background-color: #005cb3;
+	font-weight: bold;
+}
+
+li.dropdown ul.dropdown-menu li a{
+	font-weight: normal;
+}
+
+li.active a:hover{
+	color:#005cb3;
+}
+
+li.dropdown ul.dropdown-menu li a{
+	color: #005cb3;
+	background-color: #F8F8F8;
+}
+
+li.dropdown ul.dropdown-menu li.active a{
+	color: #F8F8F8;
+	background-color: #005cb3;
+	font-weight: bold;
+}
+
+.tema_fosc {
+	color: #005cb3;
+}
+.boto_tema_fosc {
+	color: #005cb3;
+	background-color: #F8F8F8;
+}
+.boto_tema_fosc:hover {
+	color: #F8F8F8;
+	background-color: #005cb3;
+}
+
+.baners{
+	margin-bottom: 15px;
+}
+
+.baner img{
+	border: 1px solid #005cb3;
+}
+
+h3 {
+	background-color: #D1E7DD;
+	color: #005cb3;
+	line-height: 2.5;
+	font-size: 20px;
+	padding-left:1%;
+}
+
+h4 {
+	color: #005cb3;
+}
+
+h5 {
+	color: #005cb3;
+}
+
+.navbar {
+	background-color: #e6f3ff;
+	color: #005cb3;
+}
+
+li.nav-item .nav-link.active {
+	color: #e6f3ff;
+	background-color: #005cb3;
+	font-weight: bold;
+}
+li.nav-item .nav-link:hover {
+	color: #e6f3ff;
+	background-color: #005cb3;
+}
+li a.dropdown-item:hover {
+	color: #e6f3ff;
+	background-color: #005cb3;
+}
+.panel-title-peu {
+	background-color: #e6f3ff;
+	padding-left:1%;
+}
+.panel-title-coldreta {
+	background-color: #e6f3ff;
+	padding-left:5px;
+}
+.panel-title {
+	background-color: white;
+
+}
+.panel-title-int {
+	background-color: white;
+	padding-left:0%;
+	padding-bottom:2%;
+	line-height:normal;
+}
+.iconaAcceptar {
+	color:green;
+}
+.iconaDenegar {
+	color:red;
+}
+.iconaCertificat {
+	color:green;
+}
+.iconaEnviarMail {
+	color:#002699;
+}
+.iconaPendent {
+	color:blue;
+}
+.iconaVeure {
+	color:#004d1a;
+}
+.iconaAcceptarPoster {
+	color:green;
+}
+.iconaAcceptarOral {
+	color:green;
+}
+.iconaPDF {
+	color:#b32400;
+}
+.iconaAgenda {
+	color:#005cb3;
+}
+.iconaEnviatQR {
+	color:green;
+}
+.iconaNoEnviatQR {
+	color:red;
+}
+.iconaModificar {
+	color:#005cb3;
+}
+div .alerta{
+  background-color:transparent;
+  color: #005cb3;
+  border:1px solid #005cb3;
+  padding: 20px;
+  border-radius: 25px;
+}
+div .alerta p{
+  color: black;
+}
+.descNoticiaAgenda {
+	padding-left:5%;
+}
+.mostraValoracio {
+	text-align: center;
+	vertical-align: middle;
+}
+video {
+	width: 90%;
+    height: auto;
+}
+#video-container {
+    line-height: 0;
+    text-align:left;
+}
+#video-container.color-marc-scanner .scan-region-highlight-svg,
+#video-container.color-marc-scanner .code-outline-highlight {
+    stroke: red !important;
+}
+.dadesQR{
+	font-size: 22px;
+	font-weight: bold;
+	color: #005cb3;
+}
+.lecturaQRCorrecta, .lecturaQRNeutra, .lecturaQRIncorrecta{
+	font-size: 20px;
+	font-weight: bold;
+}
+.lecturaQRCorrecta{
+	color:green;
+}
+.lecturaQRNeutra{
+	color: orange;
+}
+.lecturaQRIncorrecta{
+	color: red;
+}
+tr.inscritVIP td{
+	font-weight: bold;
+	background-color:#e6f3ff;
+}
+#pctAssist {
+	text-align: center;
+	vertical-align: middle;
+}
+#pctAssistVerd {
+	text-align: center;
+	vertical-align: middle;
+	color:green;
+}
+#enviamentQR {
+	text-align: center;
+	vertical-align: middle;
+}
+#taulaInscrits {
+	vertical-align: middle;
+}
+
+#taulaInscrits thead{
+	position: sticky;
+	top: 0;
+	background-color:white;
+}
+
+.menuDisabled {
+    pointer-events:none;
+}
+.switchsPeriodes {
+	/*margin-left: 5%*;*/
+}
+.textMissatgeModal {
+	margin-left:5%;
+	margin-right:5%;
+	margin-bottom:1%;
+}
+.form-switch .form-check-input {
+  	width: 4em;
+	height: 2em;
+	background-image: url(../../images/blanc.png);
+	border-color: transparent;
+}
+.form-switch .form-check-input:checked {
+  	background-image: url(../../images/blanc.png);
+  	background-color: #8cd98c; /* verd */
+  	border-color: transparent;
+  	box-shadow: 0px 0px;
+}
+.form-switch .form-check-input:not(:checked) {
+  	background-image: url(../../images/blanc.png);
+  	background-color: #ff6666; /* roig */
+  	border-color: transparent;
+}
+.form-switch .form-check-input:focus {
+  	background-image: url(../../images/blanc.png);
+  	border-color: transparent;
+  	box-shadow: 0px 0px;
+}
+.form-check-label{
+	margin-left:5%;
+	margin-right:5%;
+}

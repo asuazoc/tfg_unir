@@ -1,0 +1,122 @@
+<?
+//revisem que tingui permis per accedir-hi
+include('../vars.inc.php');
+include('control.php');
+
+$con = new mysqli($DBHost, $DBUser, $DBPass, $DBName); $con->set_charset("utf8");
+
+
+
+if ($_SERVER['REQUEST_METHOD']=='GET'){
+	$id=$_GET['id'];
+	$user=$_SESSION['user'];
+	$sql="select * from comunicacions where id=$id";
+	$res=mysqli_query($con,$sql);
+	$row=mysqli_fetch_assoc($res);
+
+	$sql_nota ="select nota from comunicacions_nota where id='".$row['id']."' and user='".$user."'";
+	$res_note=mysqli_query($con,$sql_nota);
+	$row_nota=mysqli_fetch_assoc($res_note);
+	$nota= ($row_nota['nota']=='') ? '' : $row_nota['nota'];
+} else if ($_SERVER['REQUEST_METHOD']=='POST'){
+	$id=$_POST['id'];
+	$user=$_POST['user'];
+	$nota=$_POST['nota'];
+
+	$result = mysqli_query($con,"select * from `comunicacions_nota` where id = '$id' and user='$user'");
+	if (mysqli_num_rows($result) > 0) {
+	   mysqli_query($con,"UPDATE `comunicacions_nota` SET nota = '$nota'  WHERE id = '$id' and user='$user' ");
+	} else {
+	   mysqli_query($con,"INSERT INTO  `comunicacions_nota` ( `id` ,`user` ,`nota`) VALUES ('$id',  '$user',  '$nota')");
+	}
+
+	
+	header("Location: lst_comunicacions_avaluacio.php");
+}
+
+
+?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Comunicaciones</title>
+
+<script>
+function validate(evt) {
+  var theEvent = evt || window.event;
+  var key = theEvent.keyCode || theEvent.which;
+  key = String.fromCharCode( key );
+  var regex = /[0-9]|\./;
+  if( !regex.test(key) ) {
+    theEvent.returnValue = false;
+    if(theEvent.preventDefault) theEvent.preventDefault();
+  }
+}
+</script>
+
+<style type="text/css">
+<!--
+body {
+	background-color: #ECEDF1;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+-->
+</style></head>
+
+<body>
+<form name="frm" action="" method="post">
+<table width="75%"  border="0" align="center" cellpadding="0" cellspacing="10" bgcolor="#FFFFFF">
+  <tr>
+    <td ><h2 style="color:#FFFFFF;background-color:#C4C1C1">Resumen de la comunicación num. <?=$row['id']?> </h2></td>
+  </tr>
+  <tr>
+    <td><strong><br>
+    Titulo:</strong> <?=$row['titol']?></td>
+  </tr>
+  <?if($row['tematica']!=''){?>
+  <tr>
+    <td><strong><br>
+    Tematica:</strong> <?=$row['tematica']?></td>
+  </tr>
+  <?}?>
+  <!--<tr>
+    <td><strong><br>
+    Preferencia:</strong> <?=$row['comunicacio']?></td>
+  </tr>-->
+  <tr>
+    <td><strong><br>
+    Resumen:</strong><br><?=$row['resum']?><br>
+    <br></td>
+  </tr>
+  
+  <!--<tr>
+    <td> 
+    <strong><?=TXT_PARAULES_CLAU?>: </strong>
+    <br/>
+    	Primera opción: <?=$row['paraules_clau1']?><br/>
+    	Segunda opción: <?=$row['paraules_clau2']?>
+	</td>
+  </tr>-->
+<!--
+ <tr>
+	    <td><strong>Nota:</strong><br>
+	
+		<input type="text" name="nota" maxlength="2" size="2" value="<?=$nota?>" onkeypress='validate(event)' /> 
+		<input type="hidden" name="id" value="<?=$row['id']?>"/>
+		<input type="hidden" name="user" value="<?=$_SESSION['user']?>"/>  
+
+</td>
+ </tr>
+	  <tr>
+	      	<td colspan="2">
+		<input type="submit" value="Guardar" />
+		</td>
+	  </tr>
+-->
+</table>
+</form>
+</body>
+</html>

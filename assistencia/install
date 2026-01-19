@@ -1,0 +1,38 @@
+/*SQLS*/
+CREATE TABLE `assistencia` (
+  `id` int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  `id_inscripcio` int NOT NULL,
+  `hora_registre` datetime DEFAULT NULL,
+  `usuari_registre` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `id_periode` int DEFAULT NULL,
+  `assistencia` int NOT NULL DEFAULT '1',
+  `hora_modificacio` datetime DEFAULT NULL,
+  `usuari_modificacio` varchar(50) COLLATE utf8mb4_general_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+ALTER TABLE `inscripcions`
+ADD `tipo_acreditacion` ENUM('ASISTENTE','COMITE','PONENTE','MODERADOR') NOT NULL DEFAULT 'ASISTENTE',
+ADD `enviado_qr_asistencia` ENUM('S','N') NOT NULL DEFAULT 'N' AFTER `tipo_acreditacion`;
+
+ALTER TABLE `inscripcions` CHANGE `tipo_acreditacion` `tipo_acreditacion` ENUM('ASSISTENT','COORDINADOR','PONENT','MODERADOR','COMITE')
+CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'ASSISTENT';
+
+ALTER TABLE `usuaris` ADD `rol` VARCHAR(15) NULL AFTER `nom`;
+/*ROLS: admin, control*/
+
+/*VARS*/
+/*CONTROL ASSISTENCIA*/
+define("CARPETA_WEB", "/backend_gestio/assistencia");
+define("PREFIX_EVENT", "acmhub24");
+define("SESSIO_CONTROL", "acmhub24");
+$num_periodes = 4; // especifica el número de vegades que s'escanejarà el QR durant la jornada
+$periodes_assist['1'] = array('nom'=>'Entrada SESIÓN JUEVES 14 MARZO','inici'=>mktime(13, 0, 0, 3, 14, 2025), 'fi'=>mktime(17, 0, 0, 3, 14, 2025));
+$periodes_assist['2'] = array('nom'=>'Salida SESIÓN JUEVES 14 MARZO','inici'=>mktime(18, 0, 0, 3, 14, 2025), 'fi'=>mktime(20, 0, 0, 3, 14, 2025));
+$periodes_assist['3'] = array('nom'=>'Entrada SESIÓN MAÑANA VIERNES 14 MARZO','inici'=>mktime(7, 30, 0, 3, 15, 2025), 'fi'=>mktime(11, 30, 0, 3, 15, 2025));
+$periodes_assist['4'] = array('nom'=>'Salida SESIÓN MAÑANA VIERNES 14 MARZO','inici'=>mktime(12, 0, 0, 3, 15, 2025), 'fi'=>mktime(14, 0, 0, 3, 15, 2025));
+$periodes_assist['5'] = array('nom'=>'Entrada SESIÓN TARDE VIERNES 14 MARZO','inici'=>mktime(13, 45, 0, 3, 15, 2025), 'fi'=>mktime(16, 30, 0, 3, 15, 2025));
+$periodes_assist['6'] = array('nom'=>'Salida SESIÓN TARDE VIERNES 14 MARZO','inici'=>mktime(17, 0, 0, 3, 15, 2025), 'fi'=>mktime(19, 30, 0, 3, 15, 2025));
+
+$tipo_acreditacion['ASSISTENT'] = 'acreditacio_ASSISTENT.png';
+$tipo_acreditacion['COORDINADOR'] = 'acreditacio_COORDINADOR.png';
+$tipo_acreditacion['PONENT'] = 'acreditacio_PONENT.png';

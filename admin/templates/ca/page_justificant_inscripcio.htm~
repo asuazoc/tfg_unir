@@ -1,0 +1,4 @@
+<%include("header_page_justificant.htm")%>
+<%include("info_justificant_ca.htm")%>
+<%include("footer_page_justificant.htm")%>
+

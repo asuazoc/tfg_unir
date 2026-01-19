@@ -1,0 +1,97 @@
+<h2><%$titol_congres%></h2>
+<h3><%$dates_del_congres%></h3>
+
+<%$dades.nom%> <%$dades.cognoms%>
+<br>
+
+<p>
+Este documento confirma su inscripci&oacute;n.
+</p>
+
+</b>
+<h3>INSCRIPCI&Oacute;N</h3>
+
+<table width="80%"  border="0" cellspacing="0" cellpadding="0">
+	  <tr>
+            <td  width="45%"><div align="left"><b>Referencia</b></div></td>
+            <td  width="55%"><%$dades.id%></td>
+          </tr>
+          <tr>
+            <td><div align="left"><b>Nombre</b></div></td>
+            <td><%$dades.nom%></td>
+          </tr>
+          <tr>
+            <td  width="45%"><div align="left"><b>Apellidos</b></div></td>
+            <td  width="55%"><%$dades.cognoms%></td>
+          </tr>
+          <tr>
+            <td><div align="left"><b>Localidad</b></div></td>
+            <td><%$dades.localitat%></td>
+          </tr>
+          <tr>
+            <td><div align="left"><b>Lugar de trabajo</b></div></td>
+            <td><%$dades.lloctreball%></td>
+          </tr>
+          <tr>
+            <td><div align="left"><b>E-mail</b></div></td>
+            <td><%$dades.email%></td>
+          </tr>
+          <tr>
+            <td><div align="left"><b>Telefono contacto</b></div></td>
+            <td><%$dades.telparticular%></td>
+          </tr>
+          <!--<tr>
+            <td><div align="left"><b>Sopar 24 de març. Preu 30€.</b></div></td>
+            <td><%$sopar%></td>
+          </tr>-->
+          <tr>
+            <td><div align="left"><b>Nombre/Razón social factura</b></div></td>
+            <td><%$dades.nom_facturacio%></td>
+          </tr>
+			 <tr>
+            <td><div align="left"><b>N&uacute;mero socio</b></div></td>
+            <td><%$dades.num_soci%></td>
+          </tr>  
+	  		 <tr>
+            <td><div align="left"><b>PRECIO INSCRIPCI&Oacute;N</b><br/>
+            <%$tipus_inscripcio%></div></td>
+            <td><b><%$dades.total_inscripcio%> &euro; </b></td>
+          </tr>
+          <tr>
+          	<td><div align="left"><b>Cena de las Jornadas: 17 de mayo.</b></div></td>
+            <td><%$dades.sopar%></td>
+          </tr>
+          <tr>
+          	<td><div align="left"><b>Asistiré con acompañante a la cena (61,95&euro;).</b></div></td>
+            <td><%$dades.acomp_sopar%></td>
+          </tr>
+          <tr>
+            <td width="45%"><div align="left"><b>Hotel</b></div></td>
+            <td width="55%"><%$id_hotel%></td>
+          </tr>
+          <tr>
+            <td><div align="left"><b>Fecha de entrada</b></div></td>
+            <td><%$dataentrada%></td>
+          </tr>
+          <tr>
+            <td><div align="left"><b>Fecha de salida</b></div></td>
+            <td><%$datasortida%></td>
+          </tr>
+          <tr>
+            <td><div align="left"><b>Tipo Habitaci&oacute;n</b></div></td>
+            <td><%$id_habitacio%></td>
+          </tr>
+          <tr>
+            <td><div align="left"><br/><b>PRECIO HOTEL</b></div></td>
+            <td><b><%$dades.total_allotjament%> &euro; </b></td>
+          </tr>
+	  		 <tr>
+            <td><div align="left"><br/><b>TOTAL A PAGAR</b></div></td>
+            <td><b><%$dades.total%> &euro; </b></td>
+          </tr>
+          <tr>
+            <td><div align="left"><br/><b>TOTAL PAGADO</b></div></td>
+            <td><b><%$dades.total_pagat%> &euro; </b></td>
+          </tr>
+</table>
+

@@ -1,0 +1,87 @@
+<img style="width:100%" src="https://tfgunir.HOSTNAME.com/backend_gestio/templates/cabecera_es.jpg"/>
+<h2><%$titol_congres%></h2>
+<h3><%$dates_del_congres%></h3>
+
+<%$dades.nom%> <%$dades.cg1%> <%$dades.cg2%>
+<br>
+
+
+<p>
+Este documento confirma su inscripci&oacute;n. <br>
+Recuerde que en las tarjetas identificativas aparecerá su nombre completo (2 apellidos) y su centro de trabajo
+</p>
+
+<h3>INSCRIPCI&Oacute;N</h3>
+
+<table width="80%"  border="0" cellspacing="0" cellpadding="0">
+	  <tr>
+            <td  width="45%"><div align="left"><b>Referencia</b></div></td>
+            <td  width="55%"><%$dades.id%></td>
+          </tr>
+          <tr>
+            <td><div align="left"><b>Nombre</b></div></td>
+            <td><%$dades.nom%></td>
+          </tr>
+	  	  <tr>
+            <td  width="45%"><div align="left"><b>Apellidos</b></div></td>
+            <td  width="55%"><%$dades.cg1%> <%$dades.cg2%></td>
+          </tr>
+          <tr>
+            <td><div align="left"><b>NIF</b></div></td>
+            <td><%$dades.nif%></td>
+          </tr>
+          <tr>
+            <td><div align="left"><b>E-mail</b></div></td>
+            <td><%$dades.email2%></td>
+          </tr>
+          <tr>
+            <td><div align="left"><b>Localidad</b></div></td>
+            <td><%$dades.localitat%></td>
+          </tr>
+          <tr>
+            <td><div align="left"><b>Lugar de trabajo</b></div></td>
+            <td><%$dades.lloctreball%></td>
+          </tr>
+          <tr>
+            <td><div align="left"><b>E-mail(Contacto)</b></div></td>
+            <td><%$dades.email%></td>
+          </tr>
+          <tr>
+            <td><div align="left"><b>Tel&eacute;fono contacto</b></div></td>
+            <td><%$dades.telparticular%></td>
+          </tr>
+
+	  	  <tr>
+            <td><div align="left"><b>PRECIO INSCRIPCI&Oacute;N</b><br/>
+            <%$tipus_inscripcio%></div></td>
+            <td><b><%$dades.total_inscripcio%> &euro; </b></td>
+          </tr>
+          <tr>
+            <td width="45%"><div align="left"><b>Hotel</b></div></td>
+            <td width="55%"><%$hotel%></td>
+          </tr>
+          <tr>
+            <td><div align="left"><b>Fecha de entrada</b></div></td>
+            <td><%$dataentrada%></td>
+          </tr>
+          <tr>
+            <td><div align="left"><b>Fecha de salida</b></div></td>
+            <td><%$datasortida%></td>
+          </tr>
+          <tr>
+            <td><div align="left"><b>Tipo Habitaci&oacute;n</b></div></td>
+            <td><%$habitacio%></td>
+          </tr>
+          <tr>
+            <td><div align="left"><br/><b>PRECIO HOTEL</b></div></td>
+            <td><b><%$dades.total_allotjament%> &euro; </b></td>
+          </tr>
+	  	  <tr>
+            <td><div align="left"><br/><b>TOTAL A PAGAR</b></div></td>
+            <td><b><%$dades.total%> &euro; </b></td>
+          </tr>
+          <tr>
+            <td><div align="left"><br/><b>TOTAL PAGADO</b></div></td>
+            <td><b><%$dades.total_pagat%> &euro; </b></td>
+          </tr>
+</table>
